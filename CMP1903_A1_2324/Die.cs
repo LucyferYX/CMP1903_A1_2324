@@ -6,19 +6,23 @@ using System.Threading.Tasks;
 
 namespace CMP1903_A1_2324 {
     internal class Die {
+        // Constants for minimum and maximum die value
+        private const int MinDie = 1;
+        private const int MaxDie = 6;
+
         // Property
         public int DieValue {
-            get; // Public by default
-            set; // Private by default
+            get;
+            private set;
         }
 
         // Generates random number
-        private static Random random = new Random();
+        private static readonly Random _random = new Random();
 
         // Method
         public int DieRoll() {
             // Rolls dice to get value between 1 and 6
-            DieValue = random.Next(1, 7);
+            DieValue = _random.Next(MinDie, MaxDie+1);
             return DieValue;
         }
     }

@@ -8,6 +8,12 @@ using System.Diagnostics;
 
 namespace CMP1903_A1_2324 {
     internal class Testing {
+        // Constants for minimum and maximum die and game value
+        private const int MinDie = 1;
+        private const int MaxDie = 6;
+        private const int MinGame = 3;
+        private const int MaxGame = 18;
+
         // Method
         public void TestingResults() {
             // Declares objects
@@ -19,8 +25,8 @@ namespace CMP1903_A1_2324 {
             int dieSum = game.RollAndSum();
 
             // Tests 
-            Debug.Assert(dieRoll >= 1 && dieRoll <= 6, $"Die roll should be between 1 and 6. Instead got {dieRoll}.");
-            Debug.Assert(dieSum >= 3 && dieSum <= 18, $"Sum of 3 die rolls should be between 3 and 18. Instead got {dieSum}.");
+            Debug.Assert(dieRoll >= MinDie && dieRoll <= MaxDie, $"Die roll should be between {MinDie} and {MaxDie}. Instead got {dieRoll}.");
+            Debug.Assert(dieSum >= MinGame && dieSum <= MaxGame, $"Sum of 3 die rolls should be between {MinGame} and {MaxGame}. Instead got {dieSum}.");
         }
     }
 }
