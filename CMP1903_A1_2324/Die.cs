@@ -20,7 +20,7 @@ namespace CMP1903_A1_2324 {
         private static readonly Random _random = new Random();
 
         // Method
-        public int DieRoll() {
+        public int Roll() {
             // Rolls dice to get value between 1 and 6
             DieValue = _random.Next(MinDie, MaxDie+1);
             return DieValue;

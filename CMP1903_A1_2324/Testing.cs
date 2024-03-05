@@ -21,7 +21,7 @@ namespace CMP1903_A1_2324 {
             Game game = new Game();
 
             // Variables
-            int dieRoll = die.DieRoll();
+            int dieRoll = die.Roll();
             int dieSum = game.RollAndSum();
 
             // Tests 

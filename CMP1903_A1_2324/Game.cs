@@ -14,9 +14,9 @@ namespace CMP1903_A1_2324 {
         // Method
         public int RollAndSum() {
             // Rolling the dice
-            int roll1 = _die1.DieRoll();
-            int roll2 = _die2.DieRoll();
-            int roll3 = _die3.DieRoll();
+            int roll1 = _die1.Roll();
+            int roll2 = _die2.Roll();
+            int roll3 = _die3.Roll();
 
             // Calculating the sum
             return roll1 + roll2 + roll3;

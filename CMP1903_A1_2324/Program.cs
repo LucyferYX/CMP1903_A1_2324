@@ -28,7 +28,7 @@ namespace CMP1903_A1_2324 {
 
                 if (keyInfo.Key == ConsoleKey.D1) {
                     // Outputs Die roll for input 1
-                    int dieRoll = die.DieRoll();
+                    int dieRoll = die.Roll();
                     sumOfDie += dieRoll;
                     Console.WriteLine($"Number of die is {dieRoll}.");
                 } else if (keyInfo.Key == ConsoleKey.D2) {
